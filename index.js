@@ -1,8 +1,8 @@
 var path = require('path');
 var projectRoot = path.resolve(path.dirname(__filename), '..');
 
-function cloudRequire(path) {
-    return require(path.join(projectRoot, path));
+function cloudRequire(modulePath) {
+    return require(path.join(projectRoot, modulePath));
 }
 
 module.exports = {
